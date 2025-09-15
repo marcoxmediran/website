@@ -1,0 +1,92 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #000;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    Courier New,
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 40px 0px;
+}
+
+article {
+  line-height: 1.6;
+}
+
+article h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+}
+
+article h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+article p {
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+article a {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+article a:hover {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px 15px;
+  }
+  article h1 {
+    font-size: 1.8rem;
+  }
+  article p {
+    font-size: 0.85rem;
+  }
+}
