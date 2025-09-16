@@ -1,8 +1,17 @@
+:root {
+  --background: #ffffff;
+  --primary: rgba(0, 0, 0, 1);
+  --secondary: rgba(0, 0, 0, 0.7);
+  --dark_background: #121212;
+  --dark_primary: rgba(255, 255, 255, 1);
+  --dark_secondary: rgba(255, 255, 255, 0.7);
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--background);
+  color: var(--primary);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -38,7 +47,7 @@ code {
 }
 
 main {
-  max-width: 600px;
+  max-width: 650px;
   padding: 40px 0px;
 }
 
@@ -61,20 +70,20 @@ article h2 {
 }
 
 article p {
-  color: #333;
+  color: var(--secondary);
   font-size: 0.9rem;
   margin-bottom: 8px;
 }
 
 article a.email {
-  color: #333;
+  color: var(--secondary);
   font-size: 0.9rem;
   margin-bottom: 8px;
   text-decoration: none;
 }
 
 article a {
-  color: #000;
+  color: var(--primary);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -97,5 +106,21 @@ article a:hover {
   }
   article p {
     font-size: 0.85rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark_background);
+    color: var(--dark_primary);
+  }
+  article p {
+    color: var(--dark_secondary);
+  }
+  article a.email {
+    color: var(--dark_secondary);
+  }
+  article a {
+    color: var(--dark_primary);
   }
 }
