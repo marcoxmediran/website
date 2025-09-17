@@ -1,10 +1,12 @@
 :root {
-  --background: #ffffff;
-  --primary: rgba(0, 0, 0, 1);
-  --secondary: rgba(0, 0, 0, 0.7);
-  --dark_background: #121212;
-  --dark_primary: rgba(255, 255, 255, 1);
-  --dark_secondary: rgba(255, 255, 255, 0.7);
+  --background: #f9f5d7;
+  --primary: #7c6f64;
+  --secondary: #654735;
+  --accent: #4c7a5d;
+  --dark_background: #1d2021;
+  --dark_primary: #a89984;
+  --dark_secondary: #d4be98;
+  --dark_accent: #89be82;
 }
 
 body {
@@ -13,31 +15,18 @@ body {
   background-color: var(--background);
   color: var(--primary);
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-code {
-  font-family:
     source-code-pro,
     Menlo,
     Monaco,
     Consolas,
     Courier New,
     monospace;
+  line-height: 1.5;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 * {
@@ -56,6 +45,7 @@ article {
 }
 
 article h1 {
+  color: var(--accent);
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -63,27 +53,24 @@ article h1 {
 }
 
 article h2 {
+  color: var(--accent);
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 8px;
   margin-top: 20px;
 }
 
-article p {
+article span {
   color: var(--secondary);
-  font-size: 0.9rem;
-  margin-bottom: 8px;
 }
 
-article a.email {
-  color: var(--secondary);
+article p {
   font-size: 0.9rem;
   margin-bottom: 8px;
-  text-decoration: none;
 }
 
 article a {
-  color: var(--primary);
+  color: var(--secondary);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -105,7 +92,7 @@ article a:hover {
     font-size: 1.8rem;
   }
   article p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -114,13 +101,14 @@ article a:hover {
     background-color: var(--dark_background);
     color: var(--dark_primary);
   }
-  article p {
-    color: var(--dark_secondary);
+
+  article h1,
+  article h2 {
+    color: var(--dark_accent);
   }
-  article a.email {
+
+  article a,
+  article span {
     color: var(--dark_secondary);
-  }
-  article a {
-    color: var(--dark_primary);
   }
 }
