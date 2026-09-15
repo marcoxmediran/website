@@ -2,9 +2,6 @@
   --background: #ffffff;
   --primary: #323232;
   --secondary: #0e0e0e;
-  --dark_background: #0e0e0e;
-  --dark_primary: #cccccc;
-  --dark_secondary: #ffffff;
 }
 
 body {
@@ -88,27 +85,12 @@ article a:hover {
   main {
     padding: 20px 15px;
   }
+
   article h1 {
     font-size: 1.8rem;
   }
+
   article p {
     font-size: 0.8rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dark_background);
-    color: var(--dark_primary);
-  }
-
-  article h1,
-  article h2 {
-    color: var(--dark_secondary);
-  }
-
-  article a,
-  article span {
-    color: var(--dark_secondary);
   }
 }
